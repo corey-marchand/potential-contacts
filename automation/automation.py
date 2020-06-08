@@ -26,15 +26,15 @@ def pull_email_from_file(importFile):
     return new_copy
 
 
-# # def pull_number_from_file(importFile):
-# #     contents = importFile
+def pull_number_from_file(importFile):
+    contents = importFile
 
-# #     re.findall(r'(\+?\d[-\.\s]?)?(\(\d{3}\)\s?|\d{3}[-\.\s]?)\d{3}[-\.\s]?\d{4}', contents)
+    re.findall(r'(\+?\d[-\.\s]?)?(\(\d{3}\)\s?|\d{3}[-\.\s]?)\d{3}[-\.\s]?\d{4}', contents)
 
-# #     new_copy = shutil.copy('potential-contacts.txt', './new-phone.txt')
+    new_copy = shutil.copy('potential-contacts.txt', './new-phone.txt')
     
-# #     return new_copy
+    return new_copy
 
 
 pull_email_from_file(file)
-pull_number_from_file(file)
+pull_number_from_file(contents)
